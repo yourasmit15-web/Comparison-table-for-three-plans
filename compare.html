@@ -1,69 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Responsive comparison of Free, Pro, and Business plans.">
-  <title>Plans — Feature Comparison</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Accessible responsive comparison of Free, Pro and Business plans.">
+<title>Plans — Feature Comparison</title><link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <main>
-    <h1>Plans — Feature Comparison</h1>
-    <p>Compare Free, Pro, and Business plans at a glance.</p>
-
-    <div class="controls">
-      <button id="diff" class="toggle" type="button" role="switch" aria-pressed="false">
-        Show differences only
-      </button>
-    </div>
-
-    <div class="wrap">
-      <table aria-label="Plan feature comparison">
-        <thead>
-          <tr>
-            <th scope="col">Feature</th>
-            <th scope="col">Free<br>$0</th>
-            <th scope="col" class="pro">Pro<br>$12/mo</th>
-            <th scope="col">Business<br>$29/mo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="cat"><td colspan="4">Storage &amp; files</td></tr>
-          <tr><th scope="row">Storage quota</th><td>10 GB</td><td class="pro">200 GB</td><td>2 TB</td></tr>
-          <tr><th scope="row">Max file size</th><td>100 MB</td><td class="pro">5 GB</td><td>50 GB</td></tr>
-          <tr><th scope="row">Version history</th><td>7 days</td><td class="pro">30 days</td><td>Unlimited</td></tr>
-          <tr><th scope="row">Offline access</th><td>—</td><td class="pro">✓</td><td>✓</td></tr>
-
-          <tr class="cat"><td colspan="4">Sharing &amp; collaboration</td></tr>
-          <tr><th scope="row">Shared workspaces</th><td>—</td><td class="pro">Up to 5</td><td>Unlimited</td></tr>
-          <tr><th scope="row">Guest access</th><td>—</td><td class="pro">5 guests</td><td>Unlimited</td></tr>
-          <tr class="same"><th scope="row">Public share links</th><td>✓</td><td class="pro">✓</td><td>✓</td></tr>
-          <tr><th scope="row">Link expiry &amp; passwords</th><td>—</td><td class="pro">✓</td><td>✓</td></tr>
-
-          <tr class="cat"><td colspan="4">Security &amp; compliance</td></tr>
-          <tr class="same"><th scope="row">End-to-end encryption</th><td>✓</td><td class="pro">✓</td><td>✓</td></tr>
-          <tr><th scope="row">Two-factor authentication</th><td>Optional</td><td class="pro">Optional</td><td>Enforced</td></tr>
-          <tr><th scope="row">SSO / SAML</th><td>—</td><td class="pro">—</td><td>✓</td></tr>
-          <tr><th scope="row">Audit log</th><td>—</td><td class="pro">—</td><td>✓</td></tr>
-
-          <tr class="cat"><td colspan="4">Support &amp; integrations</td></tr>
-          <tr><th scope="row">Support channel</th><td>Community</td><td class="pro">Email</td><td>Priority + Slack</td></tr>
-          <tr><th scope="row">API access</th><td>—</td><td class="pro">✓</td><td>✓</td></tr>
-          <tr class="same"><th scope="row">Zapier &amp; Make</th><td>✓</td><td class="pro">✓</td><td>✓</td></tr>
-          <tr><th scope="row">SLA guarantee</th><td>—</td><td class="pro">—</td><td>✓</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
-
-  <script>
-    const button = document.getElementById('diff');
-    button.addEventListener('click', () => {
-      const enabled = button.getAttribute('aria-pressed') === 'true';
-      button.setAttribute('aria-pressed', String(!enabled));
-      document.body.classList.toggle('diff-active', !enabled);
-    });
-  </script>
-</body>
-</html>
+<body><main>
+<h1>Plans — Feature Comparison</h1><p>Compare Free, Pro, and Business plans. On small screens the same data is presented as readable plan cards instead of requiring horizontal scrolling.</p>
+<div class="controls"><button id="diff" class="toggle" type="button" aria-pressed="false">Show differences only</button></div>
+<div class="wrap"><table><caption class="sr-only">Feature comparison for Free, Pro, and Business plans</caption><thead><tr><th scope="col">Feature</th><th scope="col">Free<br>$0</th><th scope="col" class="pro">Pro<br>$12/mo</th><th scope="col">Business<br>$29/mo</th></tr></thead><tbody>
+<tr class="cat"><td colspan="4">Storage &amp; files</td></tr><tr><th scope="row">Storage quota</th><td>10 GB</td><td class="pro">200 GB</td><td>2 TB</td></tr><tr><th scope="row">Max file size</th><td>100 MB</td><td class="pro">5 GB</td><td>50 GB</td></tr><tr><th scope="row">Version history</th><td>7 days</td><td class="pro">30 days</td><td>Unlimited</td></tr><tr><th scope="row">Offline access</th><td>—</td><td class="pro">✓</td><td>✓</td></tr>
+<tr class="cat"><td colspan="4">Sharing &amp; collaboration</td></tr><tr><th scope="row">Shared workspaces</th><td>—</td><td class="pro">Up to 5</td><td>Unlimited</td></tr><tr><th scope="row">Guest access</th><td>—</td><td class="pro">5 guests</td><td>Unlimited</td></tr><tr class="same"><th scope="row">Public share links</th><td>✓</td><td class="pro">✓</td><td>✓</td></tr><tr><th scope="row">Link expiry &amp; passwords</th><td>—</td><td class="pro">✓</td><td>✓</td></tr>
+<tr class="cat"><td colspan="4">Security &amp; compliance</td></tr><tr class="same"><th scope="row">End-to-end encryption</th><td>✓</td><td class="pro">✓</td><td>✓</td></tr><tr><th scope="row">Two-factor authentication</th><td>Optional</td><td class="pro">Optional</td><td>Enforced</td></tr><tr><th scope="row">SSO / SAML</th><td>—</td><td class="pro">—</td><td>✓</td></tr><tr><th scope="row">Audit log</th><td>—</td><td class="pro">—</td><td>✓</td></tr>
+<tr class="cat"><td colspan="4">Support &amp; integrations</td></tr><tr><th scope="row">Support channel</th><td>Community</td><td class="pro">Email</td><td>Priority + Slack</td></tr><tr><th scope="row">API access</th><td>—</td><td class="pro">✓</td><td>✓</td></tr><tr class="same"><th scope="row">Zapier &amp; Make</th><td>✓</td><td class="pro">✓</td><td>✓</td></tr><tr><th scope="row">SLA guarantee</th><td>—</td><td class="pro">—</td><td>✓</td></tr>
+</tbody></table></div>
+<section class="mobile-plans" aria-label="Mobile plan comparison">
+<article class="plan-card"><h2>Free</h2><div class="price">$0</div><div class="feature-group"><h3>Storage &amp; files</h3><div class="feature"><span>Storage quota</span><span>10 GB</span></div><div class="feature"><span>Max file size</span><span>100 MB</span></div><div class="feature"><span>Version history</span><span>7 days</span></div><div class="feature"><span>Offline access</span><span>—</span></div></div><div class="feature-group"><h3>Sharing &amp; collaboration</h3><div class="feature"><span>Shared workspaces</span><span>—</span></div><div class="feature"><span>Guest access</span><span>—</span></div><div class="feature same"><span>Public share links</span><span>✓</span></div><div class="feature"><span>Link expiry &amp; passwords</span><span>—</span></div></div><div class="feature-group"><h3>Security &amp; compliance</h3><div class="feature same"><span>End-to-end encryption</span><span>✓</span></div><div class="feature"><span>Two-factor authentication</span><span>Optional</span></div><div class="feature"><span>SSO / SAML</span><span>—</span></div><div class="feature"><span>Audit log</span><span>—</span></div></div><div class="feature-group"><h3>Support &amp; integrations</h3><div class="feature"><span>Support channel</span><span>Community</span></div><div class="feature"><span>API access</span><span>—</span></div><div class="feature same"><span>Zapier &amp; Make</span><span>✓</span></div><div class="feature"><span>SLA guarantee</span><span>—</span></div></div></article>
+<article class="plan-card"><h2>Pro</h2><div class="price">$12/mo</div><div class="feature-group"><h3>Storage &amp; files</h3><div class="feature"><span>Storage quota</span><span>200 GB</span></div><div class="feature"><span>Max file size</span><span>5 GB</span></div><div class="feature"><span>Version history</span><span>30 days</span></div><div class="feature"><span>Offline access</span><span>✓</span></div></div><div class="feature-group"><h3>Sharing &amp; collaboration</h3><div class="feature"><span>Shared workspaces</span><span>Up to 5</span></div><div class="feature"><span>Guest access</span><span>5 guests</span></div><div class="feature same"><span>Public share links</span><span>✓</span></div><div class="feature"><span>Link expiry &amp; passwords</span><span>✓</span></div></div><div class="feature-group"><h3>Security &amp; compliance</h3><div class="feature same"><span>End-to-end encryption</span><span>✓</span></div><div class="feature"><span>Two-factor authentication</span><span>Optional</span></div><div class="feature"><span>SSO / SAML</span><span>—</span></div><div class="feature"><span>Audit log</span><span>—</span></div></div><div class="feature-group"><h3>Support &amp; integrations</h3><div class="feature"><span>Support channel</span><span>Email</span></div><div class="feature"><span>API access</span><span>✓</span></div><div class="feature same"><span>Zapier &amp; Make</span><span>✓</span></div><div class="feature"><span>SLA guarantee</span><span>—</span></div></div></article>
+<article class="plan-card"><h2>Business</h2><div class="price">$29/mo</div><div class="feature-group"><h3>Storage &amp; files</h3><div class="feature"><span>Storage quota</span><span>2 TB</span></div><div class="feature"><span>Max file size</span><span>50 GB</span></div><div class="feature"><span>Version history</span><span>Unlimited</span></div><div class="feature"><span>Offline access</span><span>✓</span></div></div><div class="feature-group"><h3>Sharing &amp; collaboration</h3><div class="feature"><span>Shared workspaces</span><span>Unlimited</span></div><div class="feature"><span>Guest access</span><span>Unlimited</span></div><div class="feature same"><span>Public share links</span><span>✓</span></div><div class="feature"><span>Link expiry &amp; passwords</span><span>✓</span></div></div><div class="feature-group"><h3>Security &amp; compliance</h3><div class="feature same"><span>End-to-end encryption</span><span>✓</span></div><div class="feature"><span>Two-factor authentication</span><span>Enforced</span></div><div class="feature"><span>SSO / SAML</span><span>✓</span></div><div class="feature"><span>Audit log</span><span>✓</span></div></div><div class="feature-group"><h3>Support &amp; integrations</h3><div class="feature"><span>Support channel</span><span>Priority + Slack</span></div><div class="feature"><span>API access</span><span>✓</span></div><div class="feature same"><span>Zapier &amp; Make</span><span>✓</span></div><div class="feature"><span>SLA guarantee</span><span>✓</span></div></div></article>
+</section></main>
+<script>const b=document.getElementById('diff');b.addEventListener('click',()=>{const on=b.getAttribute('aria-pressed')==='true';b.setAttribute('aria-pressed',String(!on));document.body.classList.toggle('diff-active',!on)});</script>
+</body></html>
