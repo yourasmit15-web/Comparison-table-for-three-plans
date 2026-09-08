@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reading List</title>
+  <link rel="stylesheet" href="reading-list.css">
+</head>
+<body>
+  <main class="reading-app">
+    <header>
+      <a href="compare.html">← Plan comparison</a>
+      <h1>My Reading List</h1>
+      <p>Save articles locally so they remain available between visits.</p>
+    </header>
+
+    <section class="controls" aria-labelledby="add-title">
+      <h2 id="add-title">Add a reading item</h2>
+      <form id="add-form">
+        <label for="title">Title</label>
+        <input id="title" name="title" required autocomplete="off" placeholder="Article title">
+        <label for="url">URL</label>
+        <input id="url" name="url" type="url" required placeholder="https://example.com/article">
+        <button type="submit">Add to reading list</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="list-title">
+      <h2 id="list-title">Saved items</h2>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <div id="list" class="list"></div>
+    </section>
+  </main>
+  <script src="reading-list.js" defer></script>
+</body>
+</html>
